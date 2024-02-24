@@ -4,21 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Venta</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Ventas</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" width="80px"></a>
+    <aside class="container">
+        <div class="sidebar active">
+            <div class="head">
+                <div class="logo">
+                    <img src="/img/logo.png" width="100px">
+                </div>
+                <div class="menu-btn">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
             </div>
-            <nav>
-                <a href="#">Crear Cliente</a>
-                <a href="#">Crear producto</a>
-                <a href="#">Crear Venta</a>
-                <a href="#">Ver Ventas</a>
+            <nav class="nav">
+                <div class="menu">
+                    <p class="title">Menu</p>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bx-menu'></i>
+                                <span class="text">Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-user'></i>
+                                <span class="text">Clientes</span>
+                                <i class='arrow bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#"> 
+                                        <span >Crear Cliente</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        <span >Ver Clientes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-product-hunt'></i>
+                                <span class="text">Productos</span>
+                                <i class='arrow bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#"> 
+                                        <span>Crear Producto</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        <span>Ver Productos</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-store'></i>
+                                <span class="text">Ventas</span>
+                                <i class='arrow bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#"> 
+                                        <span>Crear Venta</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        <span>Ver Ventas</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </header>
-    </div>
+        </div>
+    </aside>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        crossorigin="anonymous">
+    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
